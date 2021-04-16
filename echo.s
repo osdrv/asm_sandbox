@@ -1,9 +1,5 @@
 .include "linux.s"
 
-.section .data
-	some_string:
-		.ascii "Hello Amazing World!\0"
-
 .section .bss
 	.lcomm echo_read_buffer, 1024
 	.equ BUFFER_SIZE, 1024
